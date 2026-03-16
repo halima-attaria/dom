@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Fun Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>DOM Fun Project</h1>
+                <div class="color-section">
+            <h2>Change Background Color</h2>
+            <div class="color-buttons">
+                <button class="color-btn red" data-color="#ff6b6b">Red</button>
+                <button class="color-btn blue" data-color="#4d9fff">Blue</button>
+                <button class="color-btn green" data-color="#51cf66">Green</button>
+                <button class="color-btn purple" data-color="#9775fa">Purple</button>
+                <button class="color-btn random-btn" id="randomColor">Random</button>
+            </div>
+        </div>
+                <div class="todo-section">
+            <h2> My To-Do List</h2>
+            
+            <div class="todo-input-group">
+                <input type="text" id="todoInput" placeholder="Add a new task...">
+                <button id="addTodo">Add</button>
+            </div>
+            
+            <ul class="todo-list" id="todoList"></ul>
+            
+            <div class="stats">
+                <span>Total: <span id="totalCount">0</span></span>
+                <span>Completed: <span id="completedCount">0</span></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
